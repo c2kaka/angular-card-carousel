@@ -1,0 +1,39 @@
+.carousel
+  position: relative
+  overflow: hidden
+
+.carousel__container
+  overflow: hidden
+  transform: translateZ(0)
+  display: flex
+  align-items: center
+  transition: all .5s ease
+  position: relative
+  height: 300px
+
+.indicators
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 40px
+
+  .indicator
+    display: inline-block
+    padding: 12px 4px
+    background-color: transparent
+    cursor: pointer
+    text-align: center
+
+    &-btn
+      display: block
+      opacity: .48
+      width: 30px
+      min-height: 2px
+      background-color: #C0C4CC
+      border: none
+      outline: 0
+      padding: 0
+      margin: 0
+      cursor: pointer
+      -webkit-transition: .3s
+      transition: .3s

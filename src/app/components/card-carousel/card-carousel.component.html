@@ -1,0 +1,12 @@
+<div class="carousel">
+  <div class="carousel__container" [style.height]="height">
+    <ng-content></ng-content>
+  </div>
+
+  <div *ngIf="showNav" class="indicators">
+    <div *ngFor="let content of slideContents; let i = index" (click)="onClickIndicator(i)" class="indicator"
+         [class.active]="activeIndex === i">
+      <span class="indicator-btn">{{ i }}</span>
+    </div>
+  </div>
+</div>
